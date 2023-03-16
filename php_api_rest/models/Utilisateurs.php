@@ -26,8 +26,7 @@ class Utilisateur
     public function readAll()
     {
         // On ecrit la requete
-        $sql = "SELECT u.nom, prenom, age,u.id, mdp, mail
-                r.id FROM $this->table u LEFT JOIN reservation r ON id_reservation = r.id ORDER BY u.created_at DESC ";
+        $sql = "SELECT nom, prenom, age, id, mdp, mail, id_reservation FROM $this->table ORDER BY created_at DESC ";
 
         // On éxecute la requête
         $req = $this->connexion->query($sql);
@@ -93,5 +92,21 @@ class Utilisateur
         } else {
             return false;
         }
+    }
+
+    public function connexion(){
+        $sql = "SELECT * FROM $this->table WHERE mail = :mail AND mdp = :mdp";
+        $req = $this->connexion->prepare($sql);
+        $re = $req->execute([
+        ":mail" => $this->mail,
+        ":mdp" => $this->mdp
+        ]);
+        return $req;
+    }
+
+    public function deconnexion(){
+        session_start();
+        $data = array();
+        session_destroy();
     }
 }
