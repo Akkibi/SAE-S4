@@ -1,8 +1,8 @@
 <?php
-class Reservation
+class Tarifs
 {
         // Toutes les méthodes et propriétés nécessaires à la gestion des données de la tables etudiants
-        private $table = "reservation";
+        private $table = "tarifs";
         private $connexion = null;
     
         // Les propritées de l'objet etudiant
@@ -22,11 +22,10 @@ class Reservation
             }
         }
 
-        public function AfficheAll()
+        public function AfficheAllTarifs()
         {
             // On ecrit la requete
-            $sql = "SELECT u.nom, prenom, age,u.id, mdp, mail
-                    r.id FROM $this->table u LEFT JOIN reservation r ON id_reservation = r.id ORDER BY u.created_at DESC ";
+            $sql = "SELECT id, designation, prix FROM $this->table";
     
             // On éxecute la requête
             $req = $this->connexion->query($sql);
@@ -34,4 +33,6 @@ class Reservation
             // On retourne le resultat
             return $req;
         }
+
+    }
 ?>

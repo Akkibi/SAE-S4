@@ -45,4 +45,48 @@ class Reservation
                 return false;
             }
         }
+
+        public function afficheReservation()
+        {
+                    // On ecrit la requete
+        $sql = "SELECT nom, id_utilisateur, prenom, age, mail, date_visite, id_tarif FROM $this->table";
+
+        // On éxecute la requête
+        $req = $this->connexion->query($sql);
+
+        // On retourne le resultat
+        return $req;
+        }
+
+        public function afficheReservationUser()
+        {
+
+        require 'connexion.php';
+
+        $user = $data['id'];
+
+        var_dump($user);
+                    // On ecrit la requete
+        $sql = "SELECT nom, id_utilisateur, prenom, age, mail, date_visite, id_tarif FROM $this->table WHERE id_utilisateur = $user";
+
+        // On éxecute la requête
+        $req = $this->connexion->query($sql);
+
+        // On retourne le resultat
+        return $req;
+        }
+
+        public function deleteReservation()
+        {
+                    $sql = "DELETE FROM $this->table WHERE id = :id";
+                    $req = $this->connexion->prepare($sql);
+            
+                    $re = $req->execute(array(":id" => $this->id));
+            
+                    if ($re) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+        }
 }
