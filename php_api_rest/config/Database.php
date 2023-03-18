@@ -4,9 +4,9 @@ class Database
 {
     // Les propriétées de connexion à la base de données
     private $host = "localhost";
-    private $dbname = "u695614801_sae_s4";
-    private $username = "u695614801_sae_s4";
-    private $password = "Mmi2_2023";
+    private $dbname = "php_api_rest";
+    private $username = "root";
+    private $password = "";
 
     // Connexion à la base de données
     public function getConnexion()
