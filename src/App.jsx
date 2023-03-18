@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Destinationinfo } from "./components/Destinationinfo.jsx";
 import { Rating } from "./components/rating.jsx";
+import { Form } from "./components/Form/Form.jsx";
 
 function App() {
   return (
@@ -21,13 +22,18 @@ function App() {
           Learn React
         </a> */}
       </header>
-      <main>
+      
+      {/*<main>
         {destination.map((destination) => {
           return <destination />;
         })}
         <Rating />
         <Destinationinfo />
-      </main>
+      </main>*/}
+
+      <Form/>
+
+
     </div>
   );
 }
