@@ -18,10 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     // Récupération des données
     $statement = $utilisateur->readAll();
 
-    if ($statement->rowCount() > 0) {
-        $data = [];
+    //A Modifier sur hostinger
 
-        $data[] = $statement->fetchAll();
+    if ($statement->rowCount() > 0) {
+
+        $data = $statement->fetchAll();
 
 
         // on renvoie ses données sous format json

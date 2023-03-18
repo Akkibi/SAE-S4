@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     // On récupère les infos envoyées
     $data = json_decode(file_get_contents("php://input"));
 
+if(isset($_POST['formconnexion'])){
     if (!empty($data->mail) && !empty($data->mdp)) {
         $utilisateur->mail = $data->mail;
         $utilisateur->mdp = $data->mdp;
@@ -41,3 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     http_response_code(405);
     echo json_encode(['message' => "La méthode n'est pas autorisée"]);
 }}
+else{
+    echo json_encode(['message' => "BRUH"]);
+}
