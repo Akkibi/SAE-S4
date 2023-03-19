@@ -8,17 +8,33 @@ const [users, setUsers] = useState([]);
       .then((data) => setUsers(data))
       .catch((err) => console.log(err));
   }, []);
+
+  function DeleteUser(){
+  const DeleteUser = () => {
+    useEffect(() => {
+      fetch("https://meneau-pro.com/api-php/controllers/delete.php")
+        .then((response) => response.json())
+        .then((data) => setUsers(data))
+        .catch((err) => console.log(err));
+    }, []);}}
+  
   return (
-    <div className="container">
+    users.map((user) => (
+    <div className="container" key={user.id}>
       <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            Nom: {user.nom} Prénom: {user.prenom} Age: {user.age} Mot de passe:
-            {user.mdp} Mail: {user.mail} Reservation: {user.id_reservation}
-          </li>
-        ))}
+          <li>Nom: {user.nom}</li>
+          <li>Prénom: {user.prenom}</li>
+          <li>Age: {user.age}</li>
+          <li>Mot de passe: {user.mdp}</li>
+          <li>Mail: {user.mail}</li>
+          <li>Reservation: {user.id_reservation}</li>
       </ul>
+      <form action={DeleteUser()} method="DELETE" name="formDeleteUser">
+        <input type="hidden" value={user.id} name="id_user" id="id_user"/>
+        <input type="submit" value="Supprimer l'utilisateur"/>
+      </form>
     </div>
+    ))
   );
 
 }
