@@ -9,6 +9,7 @@ require_once '../models/Reservation.php';
 require_once '../models/Utilisateurs.php';
 
 if ($_SERVER['REQUEST_METHOD'] === "GET") {
+    session_start();
     // On instancie la base de données
     $database = new Database();
     $db = $database->getConnexion();
@@ -16,14 +17,17 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     // On instancie l'objet etudiant
     $reservation = new Reservation($db);
     // Récupération des données
-    if (isset($data)){
+
+    $dataReservation = json_decode(file_get_contents("php://input"));
+
+    if (isset($_SESSION['user'])){
 
     $lol = $reservation->afficheReservationUser();
 
-    if ($lol->rowCount() > 0) {
-        $dataReservation = [];
+    if ($lol->rowCount()) {
 
-        $dataReservation[] = $lol->fetchAll();
+        $dataReservation = $lol->fetchAll();
+        var_dump($lol);
 
 
         // on renvoie ses données sous format json
@@ -33,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
         echo json_encode(["message" => "Aucune données à renvoyer"]);
     }
 }else{
-    echo json_encode(["message" => "Nique ta mère"]);
+    echo json_encode(["message" => "NON"]);
 }
 } else {
     http_response_code(405);

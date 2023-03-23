@@ -24,6 +24,8 @@ class Reservation
 
         public function createReservation()
         {
+
+            $user_id = $_SESSION['user']['id'];
             $sql = "INSERT INTO $this->table(nom,id_utilisateur,prenom,age,mail,date_visite,id_tarif) VALUES(:nom,:id_utilisateur,:prenom,:age,:mail,:date_visite,:id_tarif)";
     
             // Préparation de la réqête
@@ -32,7 +34,7 @@ class Reservation
             // éxecution de la reqête
             $re = $req->execute([
                 ":nom" => $this->nom,
-                ":id_utilisateur" => $this->id_utilisateur,
+                "id_utilisateur" => $this->id_utilisateur,
                 ":prenom" => $this->prenom,
                 ":age" => $this->age,
                 ":mail" => $this->mail,
@@ -61,13 +63,9 @@ class Reservation
         public function afficheReservationUser()
         {
 
-        require 'connexion.php';
-
-        $user = $data['id'];
-
-        var_dump($user);
+            $user_id = $_SESSION['user']['id'];
                     // On ecrit la requete
-        $sql = "SELECT nom, id_utilisateur, prenom, age, mail, date_visite, id_tarif FROM $this->table WHERE id_utilisateur = $user";
+        $sql = "SELECT id, nom, id_utilisateur, prenom, age, mail, date_visite, id_tarif FROM $this->table WHERE id_utilisateur = $user_id";
 
         // On éxecute la requête
         $req = $this->connexion->query($sql);
@@ -81,7 +79,9 @@ class Reservation
                     $sql = "DELETE FROM $this->table WHERE id = :id";
                     $req = $this->connexion->prepare($sql);
             
-                    $re = $req->execute(array(":id" => $this->id));
+                    $re = $req->execute([
+                        ":id" => $this->id
+                    ]);
             
                     if ($re) {
                         return true;

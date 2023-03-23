@@ -58,7 +58,9 @@ class Utilisateur
 
     public function update()
     {
-        $sql = "UPDATE $this->table SET nom=:nom, prenom=:prenom, age=:age, mdp=:mdp,  mail=:mail id_reservation=:id_reservation WHERE id=:id";
+
+        $user_id = $_SESSION['user']['id'];        
+        $sql = "UPDATE $this->table SET nom=:nom, prenom=:prenom, age=:age, mdp=:mdp,  mail=:mail WHERE id=$user_id";
 
         // Préparation de la réqête
         $req = $this->connexion->prepare($sql);
@@ -69,9 +71,7 @@ class Utilisateur
             ":prenom" => $this->prenom,
             ":age" => $this->age,
             ":mdp" => $this->mdp,
-            ":mail" => $this->mail,
-            ":id_reservation" => $this->id_reservation,
-            ":id" => $this->id
+            ":mail" => $this->mail
         ]);
         if ($re) {
             return true;
@@ -105,8 +105,7 @@ class Utilisateur
     }
 
     public function deconnexion(){
-        session_start();
-        $data = array();
         session_destroy();
+        return true;
     }
 }

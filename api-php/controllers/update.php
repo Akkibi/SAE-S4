@@ -8,6 +8,7 @@ require_once '../config/Database.php';
 require_once '../models/Utilisateurs.php';
 
 if ($_SERVER['REQUEST_METHOD'] === "PUT") {
+    session_start();
     // On instancie la base de données
     $database = new Database();
     $db = $database->getConnexion();
@@ -17,10 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] === "PUT") {
 
     // On récupère les infos envoyées
     $data = json_decode(file_get_contents("php://input"));
-
-    if (!empty($data->id) && !empty($data->nom) && !empty($data->prenom) && !empty($data->age) && !empty($data->mdp) && !empty($data->mail)) {
+    if(isset($_SESSION["user"])){
+        var_dump($_SESSION["user"]);
+    if(!empty($data->nom) && !empty($data->prenom) && !empty($data->age) && !empty($data->mdp) && !empty($data->mail)) {
         // On hydrate l'objet etudiant
-        $utilisateur->id = intval($data->id);
         $utilisateur->nom = htmlspecialchars($data->nom);
         $utilisateur->prenom = htmlspecialchars($data->prenom);
         $utilisateur->age = htmlspecialchars($data->age);
@@ -37,6 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] === "PUT") {
         }
     } else {
         echo json_encode(['message' => "Les données ne sont au complet"]);
+    }
+}else{
+    echo json_encode(['message' => "EUHHHH nique ta mère"]);
     }
 } else {
     http_response_code(405);

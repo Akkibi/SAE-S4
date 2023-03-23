@@ -18,8 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     // Récupération des données
     $statement = $utilisateur->readAll();
 
-    //A Modifier sur hostinger
-
     if ($statement->rowCount() > 0) {
 
         $data = $statement->fetchAll();
