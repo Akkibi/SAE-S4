@@ -1,114 +1,72 @@
-import Logo from "../../assets/images/logo.svg" 
+import Logo from "../../assets/logos/logo.svg" 
+import Facebook from "../../assets/logos/Facebook.svg"
+import Instagram from "../../assets/logos/Instagram.svg"
+import Linkedin from "../../assets/logos/LinkedIn.svg"
+import Vimeo from "../../assets/logos/Vimeo.svg"
 import './Footer.css'
 
 export const Footer = () => {
-    return (<div>
-        
-            {/* <footer>
-                <div>
-                    <img src={Logo} alt=""/>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis in dolor aperiam, fugit officiis quis dignissimos iste voluptates minima deserunt, perspiciatis ducimus quod repellat distinctio eos consequuntur? Hic, ad.</p>
-                </div>
-                <div>
-                    <h2>CONTACT</h2>
-                    <p>Téléphone : 01 60 95 85 90</p>
-                    <p>Email: galeriedesreves77@gmail.com</p>
-                    <p>Adresse : 2, rue Albert Einstein <br/>77420 Champs-sur-Marne</p>
-                    <p>Notre site web</p>
-                </div>
-                <div>
-                    <h2>NOS RÉSEAUX</h2>
-                    <p>galerie_des_rêves_agency</p>
-                    <p>GalerieDesRêves</p>
-                    <p>GalerieDesRêves</p>
-                    <p>Galerie des rêves</p>
-                </div>
-                <div>
-                    <h2>A PROPOS</h2>
-                    <p>Mention légale</p>
-                    <p>Notre équipe</p>
-                </div>
-            </footer> */}
-            <footer>
+    return (<footer>
                 <div class="row primary">
                     <div class="column about">
-                        <h3>Foolish Developer</h3>
+                        <img src={Logo} className="footer__logo" alt=""/>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
                             voluptatem corporis error non,
                         </p>
-                        <div class="social">
-                            <i class="fa-brands fa-facebook-square"></i>
-                            <i class="fa-brands fa-instagram-square"></i>
-                            <i class="fa-brands fa-twitter-square"></i>
-                            <i class="fa-brands fa-youtube-square"></i>
-                            <i class="fa-brands fa-whatsapp-square"></i>
-                        </div>
                     </div>
                 <div class="column links">
-                    <h3>Some Links</h3>
+                    <h3>A propos</h3>
                     <ul>
                         <li>
-                            <a href="#faq">F.A.Q</a>
+                            <a href="#faq">Notre équipe</a>
                         </li>
                         <li>
-                            <a href="#cookies-policy">Cookies Policy</a>
+                            <a href="#cookies-policy">Mentions légales</a>
                         </li>
                         <li>
-                            <a href="#terms-of-services">Terms Of Service</a>
-                        </li>
-                        <li>
-                            <a href="#support">Support</a>
+                            <a href="#terms-of-services">Condition de vente</a>
                         </li>
                     </ul>
                     </div>
                 <div class="column links">
-                    <h3>Some Links</h3>
+                    <h3>Nos réseaux</h3>
                         <ul>
                             <li>
-                                <a href="#faq">F.A.Q</a>
+                                <a href="#faq"><img src={Instagram} alt="" className="logo-reseau"/>  galerie_des_rêves_agency</a>
                             </li>
                             <li>
-                                <a href="#cookies-policy">Cookies Policy</a>
+                                <a href="#cookies-policy"><img src={Linkedin} alt="" className="logo-reseau"/>  GalerieDesRêves</a>
                             </li>
                             <li>
-                                <a href="#terms-of-services">Terms Of Service</a>
+                                <a href="#terms-of-services"><img src={Vimeo} alt="" className="logo-reseau"/>  GalerieDesRêves</a>
                             </li>
                             <li>
-                                <a href="#support">Support</a>
+                                <a href="#support"><img src={Facebook} alt="" className="logo-reseau"/>  Galerie des rêves</a>
                             </li>
                         </ul>
                 </div>
                 <div class="column links">
-                    <h3>Some Links</h3>
+                    <h3>Contact</h3>
                         <ul>
                             <li>
-                                <a href="#faq">F.A.Q</a>
+                                <a href="#faq">Téléphone : 01 60 95 85 90</a>
                             </li>
                             <li>
-                                <a href="#cookies-policy">Cookies Policy</a>
+                                <a href="#cookies-policy">Email: galeriedesreves77@gmail.com</a>
                             </li>
                             <li>
-                                <a href="#terms-of-services">Terms Of Service</a>
+                                <a href="#terms-of-services">Adresse : 2, rue Albert Einstein <br/>77420 Champs-sur-Marne</a>
                             </li>
                             <li>
-                                <a href="#support">Support</a>
+                                <a href="#support">Notre site web</a>
                             </li>
                         </ul>
                 </div>
             </div>
             <div class="row copyright">
-                <div class="footer-menu">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                    <a href="">Blog</a>
-                    <a href="">Social</a>
-                </div>
-                <p>Copyright &copy; 2021 Foolish Developer</p>
+                <p>&copy; 2023 //Galerie des rêves, Champs-sur-Marne 77420</p>
             </div>
         </footer>
-    </div>
-
     )
 }

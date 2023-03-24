@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo.svg" 
+import Logo from "../../assets/logos/logo.svg" 
 import "./Nav.css"
 import { Link } from "react-router-dom"
 
@@ -9,7 +9,7 @@ export const Nav = () => {
                 <img src={Logo} alt="page principale" />
                 <p>LES FEMME PEINTRE</p>
             </div>
-            <ul>
+            <ul className="nav__right">
                 <li><Link to="/">Acceuil</Link></li>
                 <li><Link to="/expositions">Exposition</Link></li>
                 <li><Link to="/équipe">A propos</Link></li>
