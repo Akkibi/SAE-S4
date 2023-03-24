@@ -7,8 +7,9 @@ nav {
     background-color: #000;
     color: #fff;
 }
-div {
+.nav__left{
     display: flex;
+
 }
 ul{
     display: flex;

@@ -1,4 +1,4 @@
-import { Login } from "./components/login";
+/* import { Login } from "./components/login";
 import { Inscription } from "./components/inscription";
 import { ReadAll } from "./components/Admin/readAll";
 import { Route, Routes } from "react-router-dom";
@@ -19,3 +19,4 @@ const App = () => {
   );
 };
 export default App;
+ */

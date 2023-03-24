@@ -1,18 +1,18 @@
 import Logo from "../../assets/images/logo.svg" 
 import "./Nav.css"
+import { Link } from "react-router-dom"
 
 export const Nav = () => {
     return (
         <nav>
-            <div>
+            <div className="nav__left">
                 <img src={Logo} alt="page principale" />
                 <p>LES FEMME PEINTRE</p>
             </div>
             <ul>
-                <li>Acceuil</li>
-                <li>Exposition</li>
-                <li>Actualité</li>
-                <li>A propos</li>
+                <li><Link to="/">Acceuil</Link></li>
+                <li><Link to="/expositions">Exposition</Link></li>
+                <li><Link to="/équipe">A propos</Link></li>
             </ul>
         </nav>
 
