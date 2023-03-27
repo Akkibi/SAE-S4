@@ -1,57 +1,76 @@
-import React, { useState } from "react";
-import axios, { Axios } from "axios";
+import React, { useState, useEffect } from "react";
+import { statusContext } from "../../context/context";
+import { useContext } from "react";
+export const Login = () => {
+  // const [users, setUsers] = useState([]);
+  // useEffect(() => {
+  //   fetch("https://meneau-pro.com/api-php/controllers/readAll.php")
+  //     .then((response) => response.json())
+  //     .then((data) => setUsers(data))
+  //     .catch((err) => console.log(err));
+  // }, []);
+  const [mail, setMail] = useState("");
+  const [mdp, setMdp] = useState("");
+  const StatusContext = useContext(statusContext);
 
-function PostForm() {
-  const url = "";
-  const [data, setData] = useState({
-    name: "",
-    date: "",
-    iduser: "",
-  });
-  function submit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    Axios.post(url, {
-      name: data.name,
-      date: data.date,
-      iduser: data.iduser,
-    }).then((res) => {
-      console.log(res.data);
-    });
-  }
-  function handle(e) {
-    const newData = { ...data };
-    newData[e.target.id] = e.target.value;
-    setData(newData);
-    console.log(newData);
-  }
-  return (
-    <div>
-      <form onSubmit={(e) => submit(e)}>
-        <input
-          onChange={(e) => handle(e)}
-          id="name"
-          value={data.name}
-          placeholder="name"
-          type="text"
-        ></input>
-        <input
-          onChange={(e) => handle(e)}
-          id="date"
-          value={data.date}
-          placeholder="date"
-          type="date"
-        ></input>
-        <input
-          onChange={(e) => handle(e)}
-          id="iduser"
-          value={data.iduser}
-          placeholder="iduser"
-          type="number"
-        ></input>
-        <button>Submit</button>
-      </form>
-    </div>
-  );
-}
+    fetch("https://meneau-pro.com/api-php/controllers/connexion.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        mail,
+        mdp,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status == "connected") {
+          StatusContext.login();
+        } else {
+          console.log("euh");
+        }
+      });
+  };
 
-export default PostForm;
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        login:
+        <input
+          type="text"
+          value={mail}
+          onChange={(event) => setMail(event.target.value)}
+        />
+      </label>
+      <label>
+        mdp:
+        <input
+          type="password"
+          value={mdp}
+          onChange={(event) => setMdp(event.target.value)}
+        />
+      </label>
+      <button type="submit">Se connecter</button>
+    </form>
+  );
+};
+
+// return users.map((user) => (
+//   <div className="container" key={user.id}>
+//     <ul>
+//       <li>Nom: {user.nom}</li>
+//       <li>Prénom: {user.prenom}</li>
+//       <li>Age: {user.age}</li>
+//       <li>Mot de passe: {user.mdp}</li>
+//       <li>Mail: {user.mail}</li>
+//       <li>Reservation: {user.id_reservation}</li>
+//     </ul>
+//     <form action="" method="DELETE" name="formDeleteUser">
+//       <input type="hidden" value={user.id} name="id_user" id="id_user" />
+//       <input type="submit" value="Supprimer l'utilisateur" />
+//     </form>
+//   </div>
+// ));

@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
                 $data = $lol->fetch();
                 $_SESSION["user"] = $data;
             http_response_code(200);
-            echo json_encode($_SESSION["user"]);
+            echo json_encode("connected");
             } else {
             http_response_code(503);
             echo json_encode(array("message" => "Le mail ou le mot de passe est incorrect"));
