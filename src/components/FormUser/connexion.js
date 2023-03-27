@@ -57,20 +57,3 @@ export const Login = () => {
     </form>
   );
 };
-
-// return users.map((user) => (
-//   <div className="container" key={user.id}>
-//     <ul>
-//       <li>Nom: {user.nom}</li>
-//       <li>Prénom: {user.prenom}</li>
-//       <li>Age: {user.age}</li>
-//       <li>Mot de passe: {user.mdp}</li>
-//       <li>Mail: {user.mail}</li>
-//       <li>Reservation: {user.id_reservation}</li>
-//     </ul>
-//     <form action="" method="DELETE" name="formDeleteUser">
-//       <input type="hidden" value={user.id} name="id_user" id="id_user" />
-//       <input type="submit" value="Supprimer l'utilisateur" />
-//     </form>
-//   </div>
-// ));

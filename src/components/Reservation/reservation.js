@@ -6,27 +6,31 @@ import { useContext } from "react";
 
 // Acces to fetch blocked by cors policy
 
-export const SignUp = () => {
+export const Reserver = () => {
   const [mail, setMail] = useState("");
-  const [mdp, setMdp] = useState("");
+  const [idUtilisateur, setIdUtilisateur] = useState("");
   const [prenom, setPrenom] = useState("");
   const [nom, setNom] = useState("");
   const [age, setAge] = useState("");
+  const [dateViste, setDateVisite] = useState("");
+  const [idTarif, setidTarif] = useState("");
   const StatusContext = useContext(statusContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("https://meneau-pro.com/api-php/controllers/create.php", {
+    fetch("https://meneau-pro.com/api-php/controllers/createReservation.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         mail,
-        mdp,
+        idUtilisateur,
         prenom,
         nom,
         age,
+        dateViste,
+        idTarif,
       }),
     })
       .then((response) => response.json())
@@ -50,11 +54,10 @@ export const SignUp = () => {
         />
       </label>
       <label>
-        mdp:
         <input
-          type="password"
-          value={mdp}
-          onChange={(event) => setMdp(event.target.value)}
+          type="hidden"
+          //   value={user.id}
+          onChange={(event) => setIdUtilisateur(event.target.value)}
         />
       </label>
       <label>
@@ -79,6 +82,41 @@ export const SignUp = () => {
           type="number"
           value={age}
           onChange={(event) => setAge(event.target.value)}
+        />
+      </label>
+      <div>
+        <label>
+          <input
+            type="radio"
+            value={idTarif}
+            onChange={(event) => setidTarif(event.target.value)}
+            checked
+          />
+          Tarif 1
+        </label>
+        <label>
+          <input
+            type="radio"
+            value={idTarif}
+            onChange={(event) => setidTarif(event.target.value)}
+          />
+          Tarif 2
+        </label>
+        <label>
+          <input
+            type="radio"
+            value={idTarif}
+            onChange={(event) => setidTarif(event.target.value)}
+          />
+          Tarif 3
+        </label>
+      </div>
+      <label>
+        Date de visite:
+        <input
+          type="date"
+          value={dateViste}
+          onChange={(event) => setDateVisite(event.target.value)}
         />
       </label>
       <button type="submit">S'inscrire</button>
