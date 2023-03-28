@@ -1,11 +1,11 @@
-import Slide from "./Slider/Slider";
+import {Slider} from "./Slider/Slider";
 import './Accueil.css'
 import { RollDownMenu } from "../rollDownMenu/RollDownMenu";
 
 export const Accueil = () => {
   return (
     <div>
-      <Slide></Slide>
+      <Slider></Slider>
       <div className="intro">
         <h2>En ce moment</h2>
         <p>Du mardi 04 avril au dimanche 25 juin</p>
