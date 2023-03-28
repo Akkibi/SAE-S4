@@ -1,13 +1,14 @@
 import { Etape } from "./etape/etape";
 import "./reservationP1.css";
 import { Billeterie } from "./billeterie/billeterie";
+import DameFruit from "../../assets/images/miniatures/DameFruit.png";
 
 export const ReservationP1 = () => {
   return (
     <div>
       <Etape />
       <div className="container-text">
-        <h1 className="titre-expo">Expositions les femmes peintres</h1>
+        <h1 className="titre-expo">Exposition les femmes peintres</h1>
         <p>
           Une exposition qui a pour intention de mettre les artistes femmes à
           l’honneur en venant célébrer le travail fait par ces dernières dans

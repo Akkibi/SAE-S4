@@ -1,0 +1,31 @@
+.container-text{
+    width: 80vw;
+    margin: 50px auto 0px auto;
+}
+
+.container-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precedent{
+    background-color: #d9d9d9;
+    width: 420px;
+    text-align: center;
+    padding: 22px 0px;
+    font-size: 1.4rem;
+    margin-top: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.precedent:hover{
+    background-color: #131313;
+    color: white;
+    transition: 0.5s;
+}

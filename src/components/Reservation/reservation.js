@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { statusContext } from "../../context/context";
 import { useContext } from "react";
 
+//Ceci est une page back
+
 //Problèmes à résoudre
 
 // Acces to fetch blocked by cors policy

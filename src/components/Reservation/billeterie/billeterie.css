@@ -23,12 +23,13 @@ body {
   
   .dd-button {
     display: inline-block;
-    border: 1px solid gray;
-    border-radius: 4px;
+    border: 2px solid gray;
     padding: 10px 30px 10px 20px;
     background-color: #ffffff;
     cursor: pointer;
     white-space: nowrap;
+    font-size: 1.2rem;
+    margin-bottom: -2px;
   }
   
   .dd-button:after {
@@ -55,7 +56,6 @@ body {
   .dd-menu {
     position: absolute;
     border: 1px solid #ccc;
-    border-radius: 4px;
     padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
@@ -72,9 +72,11 @@ body {
   }
   
   .dd-menu li {
-    padding: 10px 20px;
+    padding: 12px 58px;
     cursor: pointer;
     white-space: nowrap;
+    border: solid black 0.5px;
+    border-top: #ffffff;
   }
   
   .dd-menu li:hover {
@@ -96,4 +98,50 @@ body {
 .billeterie-flex{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.titre-selection{
+  text-align: center;
+  background-color: #d9d9d9;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.flex-selection{
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  padding: 10px;
+  background-color: #d9d9d9;
+  margin: 10px;
+}
+
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 93vw;
+  float: right;
+  margin-bottom: 50px;
+}
+
+.container-selection{
+  height: 500px;
+  border: solid black 2px;
+}
+
+.container-choix-billet{
+  border: solid black 2px;
+  height: 625px;
+  width: 48vw;
+}
+
+.content{
+  font-size: 1.2rem;
+}
+
+.titre-billeterie{
+  width: 90vw;
+    margin: 50px auto 10px auto;
 }

@@ -1,0 +1,44 @@
+/* heures */
+
+.hours{
+    width: 30vw;
+    margin-top: 50px;
+}
+
+.hours-top{
+    background-color: #d9d9d9;
+}
+
+.titre-hours{
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.date-hours{
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.flex-hours{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-hours{
+    margin: 0px 100px;
+}
+
+.hour{
+    background-color: #d9d9d9;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.hour:hover{
+    background-color: #0054a8;
+    transition: 1s;
+}

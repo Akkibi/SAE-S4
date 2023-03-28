@@ -11,6 +11,7 @@ import { SignUp } from "./components/FormUser/inscription";
 import { Login } from "./components/FormUser/connexion";
 import { Reserver } from "./components/Reservation/reservation";
 import { ReservationP1 } from "./components/Reservation/reservationP1";
+import { ReservationP2 } from "./components/Reservation/reservationP2";
 
 //Problèmes à résoudre
 
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/inscription" element={<SignUp />} />
         <Route path="/reserver" element={<Reserver />} />
         <Route path="/reservation" element={<ReservationP1 />} />
+        <Route path="/reservation2" element={<ReservationP2 />} />
       </Routes>
     </div>
   );
