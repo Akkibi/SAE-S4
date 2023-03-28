@@ -1,0 +1,48 @@
+.flex-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fieldset{
+    width: 80vw;
+    margin: auto;
+}
+
+.container-numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers-1{
+    background-color: #D9D9D9;
+}
+
+.numbers{
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 200px;
+    width: fit-content;
+    padding: 20px 36px 20px 36px;
+    margin: 20px 0px 0px 0px;
+}
+
+.expo-titre{
+    margin-top: 50px;
+}
+
+.hr{
+    color: black;
+    width: 130px;
+    margin: 0px -8px 30px -8px;
+    height: 3px;
+    background-color: black;
+}
+
+.hr3{
+    margin: 0px -3px 30px -8px;
+}
