@@ -1,5 +1,6 @@
 import Slide from "./Slider/Slider";
 import './Accueil.css'
+import { RollDownMenu } from "../rollDownMenu/RollDownMenu";
 
 export const Accueil = () => {
   return (
@@ -12,6 +13,7 @@ export const Accueil = () => {
         <p>Venez découvrir à travers les courants artistiques les œuvres de femmes artistes célèbres comme Artemisia Gentileschi, Berthe Morisot, Georgia O’Keeffe et plein d’autres encore…
         Cette exposition sur les femmes peintres est l’occasion de célébrer les réalisations des femmes artistes passées et présentes. Parce que les femmes ne sont pas moins, donnons leur le soutien et la reconnaissance qu’elles méritent.
         </p>
+        <RollDownMenu></RollDownMenu>
       </div>
     </div>
   );
