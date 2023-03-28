@@ -2,13 +2,6 @@ import React, { useState, useEffect } from "react";
 import { statusContext } from "../../context/context";
 import { useContext } from "react";
 export const Login = () => {
-  // const [users, setUsers] = useState([]);
-  // useEffect(() => {
-  //   fetch("https://meneau-pro.com/api-php/controllers/readAll.php")
-  //     .then((response) => response.json())
-  //     .then((data) => setUsers(data))
-  //     .catch((err) => console.log(err));
-  // }, []);
   const [mail, setMail] = useState("");
   const [mdp, setMdp] = useState("");
   const StatusContext = useContext(statusContext);

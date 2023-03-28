@@ -25,6 +25,9 @@ const App = () => {
       <button type="button" onClick={logout}>
         Déconnexion
       </button>
+      <a href="/">Accueil</a>
+      <a href="/readAll">ReadAll</a>
+      <a href="/expo">Expo</a>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/readAll" element={<ReadAll />} />
