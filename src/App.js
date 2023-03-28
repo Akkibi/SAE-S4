@@ -1,17 +1,17 @@
-import { Nav } from "./components/navigation/Nav";
-import { Page } from "./components/Page";
+import { Page } from './components/Page/Page';
 
 function App() {
   return (
-    <div>
-      {/*<Nav></Nav>*/}
-      <Page></Page>
-
+    <div className="App">
+      <header className="App-header">
+        <Page />
+      </header>
     </div>
   );
 }
 
 export default App;
+
 
 {/*import { Login } from "./components/login";
 import { Inscription } from "./components/inscription";

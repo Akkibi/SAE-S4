@@ -1,13 +1,13 @@
-import { Horaire } from "../horaire/Horaire"
+import { Horaire } from "../Horaire/Horaire"
 import { Location } from "../Location/Location"
 import { Tarif } from "../Tarif/Tarif"
 
 export const Page = () => {
     return (
-        <div className="contain-page">
-            <Horaire />
-            <Location />
-            <Tarif />
+        <div>
+            <Horaire/>
+            <Location/>
+            <Tarif/>
         </div>
     )
 }
