@@ -10,6 +10,7 @@ import { statusContext } from "./context/context";
 import { SignUp } from "./components/FormUser/inscription";
 import { Login } from "./components/FormUser/connexion";
 import { Reserver } from "./components/Reservation/reservation";
+import { ReservationP1 } from "./components/Reservation/reservationP1";
 
 //Problèmes à résoudre
 
@@ -20,7 +21,7 @@ const App = () => {
   if (isConnected === true) {
     console.log("coucou");
   }
-  return isConnected ? (
+  return (
     <div>
       <button type="button" onClick={logout}>
         Déconnexion
@@ -28,6 +29,7 @@ const App = () => {
       <a href="/">Accueil</a>
       <a href="/readAll">ReadAll</a>
       <a href="/expo">Expo</a>
+      <a href="/reservation">Reservation</a>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/readAll" element={<ReadAll />} />
@@ -38,10 +40,9 @@ const App = () => {
         <Route path="/mes-reservations" element={<ReadReservationsUser />} />
         <Route path="/inscription" element={<SignUp />} />
         <Route path="/reserver" element={<Reserver />} />
+        <Route path="/reservation" element={<ReservationP1 />} />
       </Routes>
     </div>
-  ) : (
-    <Login />
   );
 };
 export default App;
