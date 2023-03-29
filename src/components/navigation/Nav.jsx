@@ -7,7 +7,7 @@ export const Nav = () => {
         <nav>
             <div className="nav__left">
                 <img src={Logo} alt="page principale" />
-                <p>LES FEMME PEINTRE</p>
+                <p>LES FEMMES PEINTRES</p>
             </div>
             <ul className="nav__right">
                 <li><Link to="/">Acceuil</Link></li>
@@ -16,9 +16,9 @@ export const Nav = () => {
                     <ul className="roll">
                         <li><Link to="/apropos/equipe">Equipe</Link></li>
                         <li><Link to="/apropos/mentionslegales">Mention légales</Link></li>
-                        <li><Link to="/équipe">A propos</Link></li>
                     </ul>
                 </li>
+                <li></li>
             </ul>
         </nav>
 

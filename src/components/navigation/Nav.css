@@ -38,10 +38,14 @@ nav li{
     display: inline-block;
     padding: 8px;
 }
-nav ul li{
+nav .roll li{
     display:inherit;
 }
+nav .roll a{
+    color: #000000;
+}
 nav .roll{
+    position: absolute;
     max-height:0;
     left: 0;
     right: 0;
@@ -52,5 +56,5 @@ nav .roll{
 }
 nav li:hover ul{
     max-height:15em;
-    background: #5f4f4f;
+    background: #ffffff;
 }
