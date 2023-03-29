@@ -1,0 +1,1 @@
+import { Inscription } from "./Inscription";
