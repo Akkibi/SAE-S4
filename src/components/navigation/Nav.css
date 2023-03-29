@@ -9,7 +9,7 @@ nav {
 }
 .nav__left{
     display: flex;
-
+    font-family: IM_Fell_DW_Pica, sans-serif;
 }
 .nav__right{
     display: flex;

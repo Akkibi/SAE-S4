@@ -1,6 +1,30 @@
-.intro{
+section{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
+    position: relative;
+}
+.miniature__container{
+    height: 10px;
+    position: relative;
+}
+.miniature__voyageuse{
+    width: 12%;
+    bottom: -50px;
+}
+.miniature__extravagante{
+    width: 15%;
+    right: 0; 
+    bottom: -50%;
+}
+.miniature__random{
+    width: 12%;
+    right: 20vw;
+    bottom: -10px;
+}
+.miniature__container img{
+    position: absolute;
+    margin: 10px;
+    opacity: 80%;
 }
