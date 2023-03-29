@@ -1,6 +1,7 @@
 import { Horaire } from "../horaire/Horaire"
 import { Location } from "../Location/Location"
 import { Tarif } from "../Tarif/Tarif"
+import { Link } from "react-router-dom"
 import './Page.css'
 
 export const Page = () => {
@@ -26,6 +27,7 @@ export const Page = () => {
                     <Tarif />
                 </div>
             </section>
+            <Link to="/reserver/billets" className="reserver__link">Réserver vos billets</Link>
         </div>
     )
 }

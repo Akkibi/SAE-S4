@@ -12,10 +12,26 @@
     justify-content: space-between;
 }
 .droite{
-    width: 50%;
+    width: 500px;
+    border: solid black 1px;
+    padding: 10px;
 }
 .gauche{
     width: 50%;
+}
+.reserver__link{
+    display: inline-block;
+    color: #000000;
+    background-color: #D0B1D8;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: #000 solid 2px;
+    font-size: 1.5rem;
+    text-align: right;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin: 0 100px 50px 100px;
 }
 @media screen and (max-width: 768px) {
     .vidéo{
@@ -23,5 +39,8 @@
     }   
     .lfp{
         flex-direction: column;
+    }
+    .gauche{
+        width: 100%;
     }
 }

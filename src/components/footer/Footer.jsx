@@ -3,6 +3,7 @@ import Facebook from "../../assets/logos/Facebook.svg"
 import Instagram from "../../assets/logos/Instagram.svg"
 import Linkedin from "../../assets/logos/LinkedIn.svg"
 import Vimeo from "../../assets/logos/Vimeo.svg"
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export const Footer = () => {
@@ -11,21 +12,20 @@ export const Footer = () => {
                     <div class="column about">
                         <img src={Logo} className="footer__logo" alt=""/>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                            voluptatem corporis error non,
+                            Site officiel de l'exposition les femmes peintre, créer et maintenu par l'agence Galerie des rêves.
                         </p>
                     </div>
                 <div class="column links">
                     <h3>A propos</h3>
                     <ul>
                         <li>
-                            <a href="#faq">Notre équipe</a>
+                            <Link to={'/apropos/equipe'}>Notre équipe</Link>
                         </li>
                         <li>
-                            <a href="#cookies-policy">Mentions légales</a>
+                            <Link to={'/apropos/mentionslegales'}>Mentions légales</Link>
                         </li>
                         <li>
-                            <a href="#terms-of-services">Condition de vente</a>
+                            <a href="https://drive.google.com/file/d/1dCu9eaivVd-0LQs9LLtchunN239Y3tRP/view?usp=share_link">Condition de vente</a>
                         </li>
                     </ul>
                     </div>
@@ -59,7 +59,7 @@ export const Footer = () => {
                                 <a href="#terms-of-services">Adresse : 2, rue Albert Einstein <br/>77420 Champs-sur-Marne</a>
                             </li>
                             <li>
-                                <a href="#support">Notre site web</a>
+                                <a href="https://galeriedesreves.fabert.butmmi.o2switch.site/">Notre site web</a>
                             </li>
                         </ul>
                 </div>
