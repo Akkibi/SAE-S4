@@ -2,7 +2,7 @@
 
 Projet Agence d'Exposition
 
-Lien du site : 
+Lien du site : https://meneau-pro.com/les_femmes_peintres_expo/
 
 Ce projet consiste à créer un site web pour une agence d'exposition ainsi qu'un dispositif interactif pour une expérience utilisateur optimale. L'équipe de développement comprend 3 développeurs, avec l'un d'entre eux en tant que chef de projet et product owner.
 
