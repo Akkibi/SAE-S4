@@ -18,10 +18,39 @@ nav {
     margin: 0;
     padding: 0
 }
-li{
-    display: inline-block;
-    padding: 8px;
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    text-decoration: underline;
 }
 nav img{
     margin-right: 20px;
+}
+
+nav ul{
+    padding:0;
+    margin:0;
+}
+nav li{
+    position:relative;
+    display: inline-block;
+    padding: 8px;
+}
+nav ul li{
+    display:inherit;
+}
+nav .roll{
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+nav li:hover ul{
+    max-height:15em;
+    background: #5f4f4f;
 }

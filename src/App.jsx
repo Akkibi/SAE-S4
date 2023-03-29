@@ -7,10 +7,11 @@ import { Footer } from "./components/footer/Footer";
 import { SignUp } from "./components/FormUser/inscription.js";
 import { ReadAll } from "./components/Admin/readAll";
 import { Route, Routes } from "react-router-dom";
-import { Accueil } from "./components/Accueil/Accueil";
+import { Accueil } from "./components/Accueil/Accueil.jsx";
 import { Expo } from "./components/Expo/expositions";
-import { Equipe } from "./components/Equipe/equipe";
+import { Equipe } from "./components/About/Equipe/Equipe";
 import { ReservationP3 } from "./components/Reservation/reservationP3";
+import { Mention } from "./components/About/Mention/Mention";
 /* import { Inscription } from "./components/FormUser/inscription"; */
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         <Route path="/readAll" element={<ReadAll />} />
         <Route path="/" element={<Accueil />} />
         <Route path="/expositions" element={<Expo />} />
-        <Route path="/equipe" element={<Equipe />} />
+        <Route path="/apropos/equipe" element={<Equipe />} />
+        <Route path="/apropos/mentionslegales" element={<Mention />} />
         <Route path="/incription" element={<SignUp />} />
         <Route path="/reser" element={<ReservationP3/>}/>
       </Routes>
