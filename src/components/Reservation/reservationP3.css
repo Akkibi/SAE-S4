@@ -1,0 +1,47 @@
+.container-connexion{
+    border: solid 2px black;
+    width: 26vw;
+    padding: 20px;
+}
+
+.input{
+    height: 50px;
+    width: 350px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.label{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.titre-div{
+    font-size: 1.5rem;
+}
+
+.btn-connexion{
+    width: 320px;
+    background-color: #959595;
+    text-align: center;
+    margin: auto;
+    padding: 22px 0px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btn-connexion:hover{
+    background-color: #b7b6b6;
+    transition: 0.5s;
+}
+
+.flex-infos{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.container-infos{
+    border: black solid 2px;
+}
