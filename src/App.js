@@ -4,7 +4,7 @@ import { Inscription } from './components/Inscription/Inscription';
 function App() {
   return (
     <div className="App">
-      <Inscription />
+      <DejaMembre />
     </div>
   );
 }

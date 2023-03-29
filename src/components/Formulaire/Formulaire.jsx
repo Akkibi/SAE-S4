@@ -1,6 +1,6 @@
 import "./formulaire.css";
 
-export const Formulaire = ({ inputs }) => {
+export const Formulaire = ({ inputs, lien, txtlien }) => {
     return (
         <form className="Form">
             {inputs.map((input, index) => {
@@ -16,6 +16,7 @@ export const Formulaire = ({ inputs }) => {
                 } else {
                     return (
                         <div key={index}>
+                            <a href={lien}>{txtlien}</a>
                             <label id={input[2]} className={input[2]} htmlFor={input[0]}>{input[0]}</label><br></br>
                             <input key={index} id={input[2]} className='champs' type={input[1]} />
                         </div>

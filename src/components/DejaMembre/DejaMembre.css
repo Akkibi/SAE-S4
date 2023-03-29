@@ -1,19 +1,20 @@
 .username-mail {
-    color: aliceblue;
+    color: black;
 }
 
 .password {
-    color: aliceblue;
+    color: black;
 }
 
 .password-oublie {
-    color: aliceblue;
+    color: black;
 }
 
 .souvenir-de-moi {
-    color: aliceblue;
+    color: black;
 }
 
 .bouton-connection {
-    color: aliceblue;
+    color: black;
+    margin-top: 2%;
 }
