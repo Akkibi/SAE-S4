@@ -1,6 +1,28 @@
+<<<<<<< HEAD
 /* <<<<<<< HEAD
 ======= */
 /* import { Login } from "./components/login";
+=======
+import { Card } from './components/Card/CardExpo';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Card titre='BILLET EXPOSITION' date='Du mardi 03 avril au dimanche 25 juin' text='FEMMES PEINTRES' />
+        <Card titre='BILLET EXPOSITION' date='Du 30 juin au 30 septembre' text='FEMMES MUSICIENNES' />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES SCIENTIFIQUES' />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES ACTRICES' />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+{/*import { Login } from "./components/login";
+>>>>>>> origin/axelle
 import { Inscription } from "./components/inscription";
 /* >>>>>>> origin/front-Jeannie 
 import { ReadAll } from "./components/Admin/readAll";
@@ -54,5 +76,10 @@ const App = () => {
     </div>
   );
 };
+<<<<<<< HEAD
 export default App;
  */
+=======
+export default App;*/}
+
+>>>>>>> origin/axelle

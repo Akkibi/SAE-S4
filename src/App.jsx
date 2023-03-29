@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* import "./App.css"; */
 /* import { Destinationinfo } from "./components/Destinationinfo.jsx";
 import { Rating } from "./components/rating.jsx"; */
@@ -14,11 +15,16 @@ import { ReservationP3 } from "./components/Reservation/reservationP3";
 import { Mention } from "./components/About/Mention/Mention";
 import { ReservationP4 } from "./components/Reservation/reservationP4"
 /* import { Inscription } from "./components/FormUser/inscription"; */
+=======
+import { Nav } from "./components/navigation/Nav";
+import { Page } from "./components/Page";
+>>>>>>> origin/axelle
 
 function App() {
   return (
     <div>
       <Nav></Nav>
+<<<<<<< HEAD
       <Routes>
         <Route path="/readAll" element={<ReadAll />} />
         <Route path="/" element={<Accueil />} />
@@ -54,6 +60,10 @@ function App() {
           <Destinationinfo />
         </main>
       </div> */}
+=======
+      <Page></Page>
+
+>>>>>>> origin/axelle
     </div>
   );
 }
