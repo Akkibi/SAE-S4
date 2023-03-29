@@ -1,6 +1,50 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 /* <<<<<<< HEAD
 ======= */
 /* import { Login } from "./components/login";
+=======
+import { Card } from './components/Card/CardExpo';
+=======
+import { DejaMembre } from './components/DejaMembre/DejaMembre';
+import { Inscription } from './components/Inscription/Inscription';
+>>>>>>> origin/axelle
+
+function App() {
+  return (
+    <div className="App">
+      <DejaMembre />
+    </div>
+  );
+}
+
+export default App;
+
+
+<<<<<<< HEAD
+{/*import { Login } from "./components/login";
+>>>>>>> origin/axelle
+=======
+{/*import { Card } from './components/Card/CardExpo';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Card titre='BILLET EXPOSITION' date='Du mardi 03 avril au dimanche 25 juin' text='FEMMES PEINTRES' image_name="peintresse" image='assets/images/miniatures/Peintresse.png' />
+        <Card titre='BILLET EXPOSITION' date='Du 30 juin au 30 septembre' text='FEMMES MUSICIENNES' image='assets/images/miniatures/danseuse.png' image_name="musicienne" />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES SCIENTIFIQUES' image='assets/images/miniatures/ScienceWomen.png' image_name="scientifique" />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES ACTRICES' image='assets/images/miniatures/StylishWomen.png' image_name="actrice" />
+      </header>
+    </div>
+  );
+}
+
+export default App;*/}
+
+
+/*import { Login } from "./components/login";
+>>>>>>> origin/axelle
 import { Inscription } from "./components/inscription";
 /* >>>>>>> origin/front-Jeannie 
 import { ReadAll } from "./components/Admin/readAll";
@@ -54,5 +98,14 @@ const App = () => {
     </div>
   );
 };
+<<<<<<< HEAD
+<<<<<<< HEAD
 export default App;
  */
+=======
+export default App;*/}
+=======
+export default App;*/
+>>>>>>> origin/axelle
+
+>>>>>>> origin/axelle
