@@ -5,13 +5,13 @@
     text-align: center;
 }
 
-a {
+/* a {
     font-size: larger;
     background-color: aqua;
     padding: 10px 40px 10px 40px;
     border-radius: 40%;
 }
-
+ */
 img {
     position: fixed;
 }
