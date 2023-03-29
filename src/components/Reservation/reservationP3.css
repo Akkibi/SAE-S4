@@ -11,7 +11,7 @@
 
 .input{
     height: 50px;
-    width: 350px;
+    width: 23vw;
     margin-bottom: 30px;
     margin-top: 5px;
 }
@@ -26,7 +26,7 @@
 }
 
 .btn-connexion{
-    width: 320px;
+    width: 20vw;
     background-color: #959595;
     text-align: center;
     margin: auto;
@@ -34,6 +34,7 @@
     font-size: 1.4rem;
     border-radius: 50px;
     transition: 0.5s;
+    margin-top: 20px;
 }
 
 .btn-connexion:hover{
@@ -44,9 +45,76 @@
 .flex-infos{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .container-infos{
     border: black solid 2px;
+    width: 45vw;
+    padding-bottom: 25px;
+}
+
+.input-2{
+    height: 50px;
+    width: 37vw;
+    margin-top: 5px;
+}
+
+.center-input{
+    margin: 5px 4vw 30px 4vw;
+}
+
+.input-nom{
+    height: 50px;
+    width: 18vw;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.input-prenom{
+    height: 50px;
+    width: 18vw;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.container-nom-prenom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.input-radio{
+    margin: 0vh 2vw;
+
+}
+
+.precedent{
+    background-color: #d9d9d9;
+    width: 420px;
+    text-align: center;
+    padding: 22px 0px;
+    font-size: 1.4rem;
+    margin-top: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.precedent:hover{
+    background-color: #131313;
+    color: white;
+    transition: 0.5s;
+}
+
+.flex-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

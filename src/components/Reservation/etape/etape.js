@@ -22,7 +22,7 @@ export const Etape = (step) => {
           <hr className="hr hr3"></hr>
           <div className="container-numbers">
             <p className="numbers numbers-4">4</p>
-            <p>Paiement</p>
+            <p>Valider</p>
           </div>
         </div>
       </fieldset>
