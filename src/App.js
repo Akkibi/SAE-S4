@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* <<<<<<< HEAD
 ======= */
 /* import { Login } from "./components/login";
@@ -40,7 +38,7 @@ function App() {
   );
 }
 
-export default App;*/}
+export default App;*/
 
 
 /*import { Login } from "./components/login";
@@ -102,10 +100,3 @@ const App = () => {
 <<<<<<< HEAD
 export default App;
  */
-=======
-export default App;*/}
-=======
-export default App;*/
->>>>>>> origin/axelle
-
->>>>>>> origin/axelle
