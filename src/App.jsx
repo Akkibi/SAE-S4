@@ -12,6 +12,7 @@ import { Expo } from "./components/Expo/expositions";
 import { Equipe } from "./components/About/Equipe/Equipe";
 import { ReservationP3 } from "./components/Reservation/reservationP3";
 import { Mention } from "./components/About/Mention/Mention";
+import { ReservationP4 } from "./components/Reservation/reservationP4"
 /* import { Inscription } from "./components/FormUser/inscription"; */
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/apropos/mentionslegales" element={<Mention />} />
         <Route path="/incription" element={<SignUp />} />
         <Route path="/reser" element={<ReservationP3/>}/>
+        <Route path="/reser2" element={<ReservationP4/>}/>
       </Routes>
       <Footer></Footer>
       {/* <div className="App">
