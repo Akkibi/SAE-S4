@@ -1,0 +1,27 @@
+.vidéo{
+    width: 100%;
+    background-color: #ad77ba9a;
+    height: 70vh;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.lfp{
+    display: flex;
+    justify-content: space-between;
+}
+.droite{
+    width: 50%;
+}
+.gauche{
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .vidéo{
+        height: 40vh;
+    }   
+    .lfp{
+        flex-direction: column;
+    }
+}

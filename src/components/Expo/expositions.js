@@ -1,4 +1,4 @@
-import { Card } from './components/Card/CardExpo.jsx';
+import { Card } from '../Card/CardExpo.jsx';
 
 export const Expo = () => {
   return (

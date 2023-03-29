@@ -3,6 +3,7 @@
     margin-left: 50%;
     margin-right: 10%;
     text-align: center;
+    position: relative;
 }
 
 /* a {
@@ -12,8 +13,8 @@
     border-radius: 40%;
 }
  */
-img {
-    position: fixed;
+.img__card {
+    position: absolute;
 }
 
 .peintresse {
