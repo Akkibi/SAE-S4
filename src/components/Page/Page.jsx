@@ -5,9 +5,9 @@ import { Tarif } from "../Tarif/Tarif"
 export const Page = () => {
     return (
         <div>
-            <Horaire/>
-            <Location/>
-            <Tarif/>
+            <Horaire />
+            <Location />
+            <Tarif />
         </div>
     )
 }
