@@ -4,6 +4,7 @@ import { Selection } from "./selection/selection";
 import { Calendar } from "./calendrier/calendrier";
 import { Hours } from "./hours/hours";
 import { BtnReservation } from "./btn/btn";
+import { Link } from "react-router-dom";
 
 export const ReservationP2 = () => {
   return (
@@ -17,10 +18,12 @@ export const ReservationP2 = () => {
           <Hours />
         </div>
         <div className="flex-btn">
-          <a href="/reservation">
-            <p className="precedent">PRECEDENT</p>
-          </a>
-          <BtnReservation />
+            <Link to={'/reserver/billets'}>
+              <p className="precedent">PRECEDENT</p>
+            </Link>
+          <Link to={'/reserver/information'}>
+            <BtnReservation />
+          </Link>
         </div>
       </div>
     </div>

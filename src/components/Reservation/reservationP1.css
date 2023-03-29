@@ -1,7 +1,17 @@
+.reserv__page{
+    width: 100%;
+}
 .container-text{
-    width: 90vw;
-    margin: 50px auto 0px auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .titre-expo{
     margin-bottom: 40px;
 }
+/* .reserv__page{
+    background-color: #F5F5F5;
+    background-image: url(../../assets/images/miniatures/DameFruit.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+} */

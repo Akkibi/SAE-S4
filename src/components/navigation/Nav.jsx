@@ -10,7 +10,7 @@ export const Nav = () => {
                 <p>LES FEMMES PEINTRES</p>
             </div>
             <ul className="nav__right">
-                <li><Link to="/">Acceuil</Link></li>
+                <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/expositions">Exposition</Link></li>
                 <li>A propos<br/>
                     <ul className="roll">

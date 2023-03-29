@@ -121,8 +121,8 @@
   display: flex;
   justify-content: space-between;
   align-items: top;
-  width: 93vw;
-  float: right;
+  width: 93vw;/* 
+  float: right; */
   margin-bottom: 50px;
 }
 

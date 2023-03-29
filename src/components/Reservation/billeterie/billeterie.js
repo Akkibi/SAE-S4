@@ -1,5 +1,6 @@
 import "./billeterie.css";
 import { BtnReservation } from "../btn/btn";
+import { Link } from "react-router-dom";
 
 export const Billeterie = () => {
   return (
@@ -71,7 +72,9 @@ export const Billeterie = () => {
               <p>0.00 €</p>
             </div>
           </fieldset>
-          <BtnReservation />
+          <Link to={'/reserver/dates'}>
+            <BtnReservation />
+          </Link>
         </div>
       </div>
     </div>
