@@ -13,13 +13,15 @@
     margin-right: 2rem;
 }
 .slider h1{
-    font-size: 4.8rem;
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 3rem;
+    font-family: IM_Fell_DW_Pica, sans-serif;
 }
 .slider p{
     font-size: 2rem;
+    font-family: Montserrat, sans-serif;
 }
 .slider a{
     display: inline-block;
@@ -31,4 +33,6 @@
     border: #000 solid 2px;
     font-size: 1.5rem;
     text-align: right;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
 }

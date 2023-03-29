@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Slider = () => {
   return (
     <div className='slider'>
-      <h1>Les femmes peintres</h1>
+      <h1>LES FEMMES PEINTRES</h1>
       <p>Voyage à travers les époques et les courants</p>
       <p>
         <Link to={'/expositions'} className="reeservation__link">Réserver</Link>
