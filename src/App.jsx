@@ -30,10 +30,10 @@ function App() {
         <Route path="/apropos/equipe" element={<Equipe />} />
         <Route path="/apropos/mentionslegales" element={<Mention />} />
         <Route path="/incription" element={<SignUp />} />
-        <Route path="/reserver/billets" element={<ReservationP1/>}/>
-        <Route path="/reserver/dates" element={<ReservationP2/>}/>
-        <Route path="/reserver/information" element={<ReservationP3/>}/>
-        <Route path="/reserver/valider" element={<ReservationP4/>}/>
+        <Route path="/reserver/billets" element={<ReservationP1 />} />
+        <Route path="/reserver/dates" element={<ReservationP2 />} />
+        <Route path="/reserver/information" element={<ReservationP3 />} />
+        <Route path="/reserver/valider" element={<ReservationP4 />} />
         <Route path="/les-femmes-peintres" element={<Page />} />
         <Route path="/inscription" element={<Inscription />} />
       </Routes>
@@ -62,7 +62,7 @@ function App() {
           <Destinationinfo />
         </main>
       </div> */}
-      </div>
+    </div>
   );
 }
 
