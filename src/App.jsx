@@ -1,4 +1,3 @@
-
 /* import "./App.css"; */
 /* import { Destinationinfo } from "./components/Destinationinfo.jsx";
 import { Rating } from "./components/rating.jsx"; */
@@ -18,6 +17,7 @@ import { ReservationP4 } from "./components/Reservation/reservationP4";
 import { Mention } from "./components/About/Mention/Mention";
 /* import { Inscription } from "./components/FormUser/inscription"; */
 import { Page } from "./components/Page";
+import { Inscription } from "./components/Inscription/Inscription";
 
 function App() {
   return (
@@ -34,6 +34,8 @@ function App() {
         <Route path="/reserver/dates" element={<ReservationP2/>}/>
         <Route path="/reserver/information" element={<ReservationP3/>}/>
         <Route path="/reserver/valider" element={<ReservationP4/>}/>
+        <Route path="/les-femmes-peintres" element={<Page />} />
+        <Route path="/inscription" element={<Inscription />} />
       </Routes>
       <Footer></Footer>
       {/* <div className="App">
