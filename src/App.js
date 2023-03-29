@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
+======= */
 /* import { Login } from "./components/login";
 import { Inscription } from "./components/inscription";
->>>>>>> origin/front-Jeannie
+/* >>>>>>> origin/front-Jeannie 
 import { ReadAll } from "./components/Admin/readAll";
 import { Route, Routes } from "react-router-dom";
 import { Accueil } from "./components/Accueil/Accueil";
