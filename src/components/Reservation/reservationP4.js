@@ -1,11 +1,12 @@
 import "./reservationP4.css";
+import { Link } from "react-router-dom";
 
 export const ReservationP4 = () => {
   return (
     <div>
-      <a href="/">
-        <p className="lien-accueil">Retour à l'accueil</p>
-      </a>
+        <Link to={'/'}>
+          <p className="lien-accueil">Retour à l'accueil</p>
+        </Link>
       <div className="billet">
         <p className="titre-billet">BILLET EXPOSITION</p>
         <p className="nom-expo">FEMMES PEINTRES</p>

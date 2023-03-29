@@ -2,6 +2,7 @@ import { BtnReservation } from "./btn/btn";
 import { Etape } from "./etape/etape";
 import "./reservationP3.css";
 import { Selection } from "./selection/selection";
+import { Link } from "react-router-dom";
 
 export const ReservationP3 = () => {
   return (
@@ -89,12 +90,12 @@ export const ReservationP3 = () => {
           </div>
         </div>
         <div className="flex-btn">
-          <a href="/reservation2">
-            <p className="precedent">PRECEDENT</p>
-          </a>
-          <a href="/reservation4">
-            <BtnReservation />
-          </a>
+            <Link to={'/reserver/dates'}>
+              <p className="precedent">PRECEDENT</p>
+            </Link>
+            <Link to={'/reserver/valider'}>
+              <BtnReservation />
+            </Link>
         </div>
       </div>
     </div>

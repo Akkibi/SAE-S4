@@ -10,9 +10,11 @@ import { Route, Routes } from "react-router-dom";
 import { Accueil } from "./components/Accueil/Accueil.jsx";
 import { Expo } from "./components/Expo/expositions";
 import { Equipe } from "./components/About/Equipe/Equipe";
+import { ReservationP1 } from "./components/Reservation/reservationP1";
+import { ReservationP2 } from "./components/Reservation/reservationP2";
 import { ReservationP3 } from "./components/Reservation/reservationP3";
+import { ReservationP4 } from "./components/Reservation/reservationP4";
 import { Mention } from "./components/About/Mention/Mention";
-import { ReservationP4 } from "./components/Reservation/reservationP4"
 /* import { Inscription } from "./components/FormUser/inscription"; */
 
 function App() {
@@ -26,8 +28,10 @@ function App() {
         <Route path="/apropos/equipe" element={<Equipe />} />
         <Route path="/apropos/mentionslegales" element={<Mention />} />
         <Route path="/incription" element={<SignUp />} />
-        <Route path="/reser" element={<ReservationP3/>}/>
-        <Route path="/reser2" element={<ReservationP4/>}/>
+        <Route path="/reserver/billets" element={<ReservationP1/>}/>
+        <Route path="/reserver/dates" element={<ReservationP2/>}/>
+        <Route path="/reserver/information" element={<ReservationP3/>}/>
+        <Route path="/reserver/valider" element={<ReservationP4/>}/>
       </Routes>
       <Footer></Footer>
       {/* <div className="App">
