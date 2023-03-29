@@ -1,10 +1,13 @@
-import { Page } from './components/Page/Page';
+import { Card } from './components/Card/CardExpo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Page />
+        <Card titre='BILLET EXPOSITION' date='Du mardi 03 avril au dimanche 25 juin' text='FEMMES PEINTRES' />
+        <Card titre='BILLET EXPOSITION' date='Du 30 juin au 30 septembre' text='FEMMES MUSICIENNES' />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES SCIENTIFIQUES' />
+        <Card titre='BILLET EXPOSITION' date='- - A venir - -' text='FEMMES ACTRICES' />
       </header>
     </div>
   );

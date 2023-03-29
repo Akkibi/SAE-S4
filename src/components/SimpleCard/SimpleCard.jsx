@@ -1,4 +1,4 @@
-export const SimpleCard = ({symbol, text, text2}) => {
+export const SimpleCard = ({ symbol, text, text2 }) => {
     return (
         <div>
             <span id={symbol}>{symbol}</span>
