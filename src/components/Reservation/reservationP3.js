@@ -31,7 +31,7 @@ export const ReservationP3 = () => {
             </div>
           </div>
           <div>
-            <p>Continuer sans inscription</p>
+            <p className="titre-div">Continuer sans inscription</p>
             <div className="container-infos"></div>
           </div>
         </div>
