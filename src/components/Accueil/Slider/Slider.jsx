@@ -7,7 +7,7 @@ export const Slider = () => {
       <h1>LES FEMMES PEINTRES</h1>
       <p>Voyage à travers les époques et les courants</p>
       <p>
-        <Link to={'/expositions'} className="reeservation__link">Réserver</Link>
+        <Link to={'/reserver/billets'} className="reeservation__link">Réserver</Link>
       </p>
     </div>
   )
