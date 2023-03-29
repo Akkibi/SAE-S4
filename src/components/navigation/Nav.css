@@ -3,14 +3,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 2rem;
-    width: 100vw;
+    width: 100%;
     background-color: #000;
     color: #fff;
 }
-div {
+.nav__left{
     display: flex;
+
 }
-ul{
+.nav__right{
     display: flex;
     list-style:none;
     justify-content: space-between;
@@ -21,6 +22,6 @@ li{
     display: inline-block;
     padding: 8px;
 }
-img{
+nav img{
     margin-right: 20px;
 }
