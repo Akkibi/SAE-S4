@@ -24,7 +24,7 @@ export const ReservationP1 = () => {
         </p>
       </div>
       <div className="miniature__container">
-			  <img src={DameFruit} alt="" className="miniature__extravagante"/>
+			  <img src={DameFruit} alt="" className="miniature__extravagante miniature__extravagante-billet"/>
 		  </div>
       <Billeterie />
     </div>

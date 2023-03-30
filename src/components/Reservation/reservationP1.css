@@ -8,6 +8,10 @@
 .titre-expo{
     margin-bottom: 40px;
 }
+.miniature__extravagante-billet{
+    width: auto;
+    height: 50vh;
+}
 /* .reserv__page{
     background-color: #F5F5F5;
     background-image: url(../../assets/images/miniatures/DameFruit.png);
