@@ -11,11 +11,11 @@ export const ReservationP4 = () => {
         <p className="titre-billet">BILLET EXPOSITION</p>
         <p className="nom-expo">FEMMES PEINTRES</p>
         <p className="date-billet">2 billets pour le 28/02 à 14h00</p>
-        <p className="reservation-valide">RESERVATION VALIDÉE</p>
+        <p className="reservation-valide">RÉSERVATION VALIDÉE</p>
       </div>
       <div className="flex-liens">
         <a>IMPRIMER MON BILLET</a>
-        <a>TELECHARGER LA FACTURE</a>
+        <a>TÉLÉCHARGER LA FACTURE</a>
       </div>
     </div>
   );
