@@ -7,7 +7,7 @@ export const Nav = () => {
     return (
         <nav>
             <div className="nav__left">
-                <img src={Logo} alt="page principale" />
+                <Link to={'/'}><img src={Logo} alt="page principale" /></Link>
                 <p>LES FEMMES PEINTRES</p>
             </div>
             <ul className="nav__right">
